@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:leather",
+    "X": "minecraft:paper"
+  },
+  "pattern": [
+    "# #",
+    "#X#",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "currency:wallet"
+  }
+}

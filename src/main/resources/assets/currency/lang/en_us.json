@@ -1,3 +1,12 @@
 {
-  "item.currency.wallet": "Wallet"
+  "item.currency.wallet": "Wallet",
+
+  "item.currency.currency1": "1 dol",
+  "item.currency.currency2": "5 dol",
+  "item.currency.currency3": "10 dol",
+  "item.currency.currency4": "20 dol",
+  "item.currency.currency5": "50 dol",
+  "item.currency.currency6": "100 dol",
+
+  "creativetab.currency.currency_items": "Currency Items"
 }

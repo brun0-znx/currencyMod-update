@@ -1,5 +1,6 @@
 package com.brun0znx.currency;
 
+import com.brun0znx.currency.item.ModCreativeModeTabs;
 import com.brun0znx.currency.item.ModItems;
 import org.slf4j.Logger;
 
@@ -36,6 +37,7 @@ public class CurrencyModUpdate {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
 
         // Register the item to a creative tab
@@ -53,6 +55,12 @@ public class CurrencyModUpdate {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.WALLET);
+            event.accept(ModItems.CURRENCY1);
+            event.accept(ModItems.CURRENCY2);
+            event.accept(ModItems.CURRENCY3);
+            event.accept(ModItems.CURRENCY4);
+            event.accept(ModItems.CURRENCY5);
+            event.accept(ModItems.CURRENCY6);
         }
     }
 
